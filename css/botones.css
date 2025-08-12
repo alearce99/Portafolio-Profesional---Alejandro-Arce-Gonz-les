@@ -1,0 +1,47 @@
+/* Estilos de botones principales */
+.btn-cv {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 32px;
+    background: linear-gradient(90deg, #191654 0%, #43c6ac 100%);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(67,198,172,0.15);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+.btn-cv:hover {
+    background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+    transform: scale(1.05);
+}
+.btn-info {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 24px;
+    background: #43c6ac;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    box-shadow: 0 1px 4px rgba(67,198,172,0.12);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+.btn-info:hover {
+    background: #191654;
+    transform: scale(1.07);
+}
+/* Modo día para botones */
+.modo-dia .btn-cv, .modo-dia .btn-info {
+    background: #0077b6 !important;
+    color: #fff !important;
+}
+.modo-dia .btn-cv:hover, .modo-dia .btn-info:hover {
+    background: #23272f !important;
+    color: #fff !important;
+}

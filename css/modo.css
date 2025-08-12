@@ -1,0 +1,125 @@
+/* Estilos del botón deslizable modo día/noche y modo día */
+.modo-toggle {
+    position: fixed;
+    top: 18px;
+    right: 32px;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(44,62,80,0.12);
+    padding: 8px 18px;
+    border-radius: 24px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #23272f;
+    border-radius: 28px;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background: #00b4d8;
+    border-radius: 50%;
+    transition: .4s;
+}
+.switch input:checked + .slider {
+    background: #e0e0e0;
+}
+.switch input:checked + .slider:before {
+    transform: translateX(24px);
+    background: #23272f;
+}
+#modoLabel {
+    font-weight: bold;
+    color: #00b4d8;
+    font-size: 1em;
+}
+.modo-dia {
+    background: #f6f8fa !important;
+    color: #23272f !important;
+}
+.modo-dia .container,
+.modo-dia .card-modern {
+    background: #fff !important;
+    color: #23272f !important;
+    box-shadow: 0 2px 16px rgba(44,62,80,0.10);
+}
+.modo-dia h2, .modo-dia .titulo-efecto {
+    color: #0077b6 !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+}
+.modo-dia nav {
+    background: #e0e0e0 !important;
+    color: #23272f !important;
+}
+.modo-dia nav a {
+    color: #23272f !important;
+}
+.modo-dia nav a:hover {
+    color: #0077b6 !important;
+    border-bottom: 2px solid #0077b6 !important;
+}
+.modo-dia .proyecto {
+    background: #f6f8fa !important;
+    color: #23272f !important;
+}
+.modo-dia .proyecto h3 {
+    color: #23272f !important;
+}
+.modo-dia .proyecto:hover {
+    box-shadow: 0 8px 24px rgba(44,62,80,0.18);
+    background: #cfd8dc !important;
+    transform: scale(1.04) translateY(-4px);
+}
+.modo-dia .lista-efecto li {
+    background: #e0e0e0 !important;
+    color: #0077b6 !important;
+    border: 1px solid #cfd8dc !important;
+}
+.modo-dia .lista-efecto li:hover {
+    background: #23272f !important;
+    color: #fff !important;
+    transform: scale(1.07);
+    box-shadow: 0 4px 16px rgba(44,62,80,0.18);
+}
+.modo-dia .icono-seccion {
+    color: #0077b6 !important;
+}
+.modo-dia .btn-cv, .modo-dia .btn-info {
+    background: #0077b6 !important;
+    color: #fff !important;
+}
+.modo-dia .btn-cv:hover, .modo-dia .btn-info:hover {
+    background: #23272f !important;
+    color: #fff !important;
+}
+.modo-dia footer {
+    background: #e0e0e0 !important;
+    color: #23272f !important;
+    border-top: 1px solid #cfd8dc !important;
+}
+.modo-dia .modal-contenido {
+    background: #fff !important;
+    color: #23272f !important;
+}

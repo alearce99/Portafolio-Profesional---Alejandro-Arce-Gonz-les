@@ -1,0 +1,55 @@
+/* Estilos generales y layout */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #181c24 0%, #23272f 100%);
+    color: #e0e0e0;
+}
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    animation: fadeInUp 1s;
+    background: #23272f;
+    color: #e0e0e0;
+    box-shadow: 0 2px 16px rgba(44,62,80,0.18);
+    border-radius: 16px;
+    padding: 40px 30px;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+section {
+    margin-bottom: 40px;
+}
+h2 {
+    margin-top: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
+    background: #181c24;
+    color: #e0e0e0;
+    border-top: 1px solid #23272f;
+    box-shadow: 0 -2px 8px rgba(44,62,80,0.18);
+}
+/* Modo día: sobrescribe colores oscuros */
+.modo-dia {
+    background: #f6f8fa !important;
+    color: #23272f !important;
+}
+.modo-dia .container {
+    background: #fff !important;
+    color: #23272f !important;
+    box-shadow: 0 2px 16px rgba(44,62,80,0.10);
+}
+.modo-dia footer {
+    background: #e0e0e0 !important;
+    color: #23272f !important;
+    border-top: 1px solid #cfd8dc !important;
+    box-shadow: 0 -2px 8px rgba(44,62,80,0.10) !important;
+}

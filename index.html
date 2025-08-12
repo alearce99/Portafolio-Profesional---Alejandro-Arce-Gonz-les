@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional - Alejandro Arce Gonzalez</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/botones.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="stylesheet" href="../css/secciones.css">
+    <link rel="stylesheet" href="../css/proyectos.css">
+    <link rel="stylesheet" href="../css/modo.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="modo-toggle" style="display: flex; gap: 32px; align-items: center;">
+        <div>
+            <label class="switch">
+                <input type="checkbox" id="modoSwitch">
+                <span class="slider"></span>
+            </label>
+            <span id="modoLabel">Noche</span>
+        </div>
+        <div>
+            <label class="switch">
+                <input type="checkbox" id="idiomaSwitch">
+                <span class="slider"></span>
+            </label>
+            <span id="idiomaLabel">Español</span>
+        </div>
+    </div>
+    <header class="fade-in">
+        <div class="perfil">
+            <img src="../Imagenes/perfil.jpg" alt="Foto de perfil" class="perfil-img">
+            <div>
+                
+                <h1>Alejandro Arce Gonzalez</h1>
+                <p>Desarrollador Web | Ingeniero de Software | Desarrollador</p>
+                <a href="../cv.pdf" class="btn-cv" download>Descargar CV</a>
+            </div>
+        </div>
+    </header>
+    <nav class="slide-down">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#educacion">Educación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="sobre-mi" class="fade-in card-modern">
+            <h2 class="titulo-efecto">Sobre mí</h2>
+            <div class="icono-seccion"><span>👨‍💻</span></div>
+            <p>
+                Soy un profesional apasionado por la tecnología y el desarrollo de software. Tengo experiencia en <strong>[tus tecnologías principales]</strong> y me especializo en crear soluciones innovadoras y eficientes. Me considero una persona proactiva, creativa y orientada a resultados.
+            </p>
+        </section>
+        <section id="servicios" class="fade-in card-modern">
+            <h2 class="titulo-efecto">Servicios</h2>
+            <div class="icono-seccion"><span>🛠️</span></div>
+            <ul class="lista-efecto">
+                <li>Desarrollo web personalizado</li>
+                <li>Consultoría tecnológica</li>
+                <li>Optimización y mantenimiento de sitios</li>
+                <li>Automatización de procesos</li>
+            </ul>
+        </section>
+        <section id="habilidades" class="fade-in card-modern">
+            <h2 class="titulo-efecto">Habilidades</h2>
+            <div class="icono-seccion"><span>💡</span></div>
+            <div class="carrusel-habilidades rueda">
+                                <div style="display: flex; align-items: center; justify-content: center; width: 100%;">
+                                    <button class="carrusel-btn prev" aria-label="Anterior">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <polyline points="20,8 12,16 20,24" stroke="#0056b3" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <div class="carrusel-items rueda-track">
+                                        <div class="habilidad-item rueda-item">
+                                            <div class="logo-box"><img src="../Imagenes/html.png" alt="HTML Logo" class="habilidad-logo" onerror="this.src='../Imagenes/html.svg'"></div>
+                                        </div>
+                                        <div class="habilidad-item rueda-item">
+                                            <div class="logo-box"><img src="../Imagenes/css.png" alt="CSS Logo" class="habilidad-logo" onerror="this.src='../Imagenes/css.svg'"></div>
+                                        </div>
+                                        <div class="habilidad-item rueda-item">
+                                            <div class="logo-box"><img src="../Imagenes/python.png" alt="Python Logo" class="habilidad-logo" onerror="this.src='../Imagenes/python.svg'"></div>
+                                        </div>
+                                    </div>
+                                    <button class="carrusel-btn next" aria-label="Siguiente">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <polyline points="12,8 20,16 12,24" stroke="#0056b3" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+            </div>
+        </section>
+        <section id="educacion" class="fade-in card-modern">
+            <h2 class="titulo-efecto">Educación</h2>
+            <div class="icono-seccion"><span>🎓</span></div>
+            <ul class="lista-efecto">
+                <li>Licenciatura en Ingeniería de Software - Universidad Ejemplo</li>
+                <li>Certificación en Desarrollo Web - Plataforma Online</li>
+                <li>Curso de UX/UI Design - Academia Digital</li>
+            </ul>
+        </section>
+        <section id="proyectos" class="fade-in">
+            <h2>Proyectos destacados</h2>
+            <div class="proyectos">
+                <div class="proyecto zoom">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Proyecto 1" class="proyecto-img">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto, tecnologías utilizadas y el impacto logrado.</p>
+                    <button class="btn-info" onclick="abrirModalProyecto(1)">Ver más y descargar</button>
+                </div>
+                <div class="proyecto zoom">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="Proyecto 2" class="proyecto-img">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto, tecnologías utilizadas y el impacto logrado.</p>
+                    <button class="btn-info" onclick="abrirModalProyecto(2)">Ver más y descargar</button>
+                </div>
+                <div class="proyecto zoom">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Proyecto 3" class="proyecto-img">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción breve del proyecto, tecnologías utilizadas y el impacto logrado.</p>
+                    <button class="btn-info" onclick="abrirModalProyecto(3)">Ver más y descargar</button>
+                </div>
+                <div class="proyecto zoom">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Proyecto 4" class="proyecto-img">
+                    <h3>Proyecto 4</h3>
+                    <p>Descripción breve del proyecto, tecnologías utilizadas y el impacto logrado.</p>
+                    <button class="btn-info" onclick="abrirModalProyecto(4)">Ver más y descargar</button>
+                </div>
+                <div class="proyecto zoom">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Proyecto 5" class="proyecto-img">
+                    <h3>Proyecto 5</h3>
+                    <p>Descripción breve del proyecto, tecnologías utilizadas y el impacto logrado.</p>
+                    <button class="btn-info" onclick="abrirModalProyecto(5)">Ver más y descargar</button>
+                </div>
+                 <div class="proyecto zoom">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Proyecto 5" class="proyecto-img">
+                    <h3>Proyecto 6</h3>
+                    <p>Descripción breve del proyecto, tecnologías utilizadas y el impacto logrado.</p>
+                    <button class="btn-info" onclick="abrirModalProyecto(5)">Ver más y descargar</button>
+                </div>
+    <!-- Modal de proyecto -->
+    <div id="modalProyecto" class="modal-proyecto">
+        <div class="modal-contenido">
+            <span class="modal-cerrar" onclick="cerrarModalProyecto()">&times;</span>
+            <div id="modalProyectoContenido"></div>
+        </div>
+    </div>
+            </div>
+        </section>
+        <section id="contacto" class="fade-in">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme en:</p>
+            <ul>
+                <li>Email: <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></li>
+                <li>GitHub: <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></li>
+            </ul>
+            <button class="btn-cv" id="abrirContacto">Abrir formulario</button>
+            <div id="modalContacto" class="modal-contacto" style="display:none;">
+                <div class="modal-contenido-contacto">
+                    <span class="modal-cerrar-contacto" onclick="cerrarModalContacto()">&times;</span>
+                    <form id="formContacto" class="form-contacto">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                        <button type="submit" class="btn-cv">Enviar</button>
+                        <div id="formMsg" class="form-msg"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="slide-up">
+        &copy; 2025 [Tu Nombre]. Todos los derechos reservados.
+    </footer>
+    <script src="../js/carrusel-habilidades.js"></script>
+    <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Modal de contacto
+    document.getElementById('abrirContacto').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('modalContacto').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    });
+    function cerrarModalContacto() {
+        document.getElementById('modalContacto').style.display = 'none';
+        document.body.style.overflow = '';
+    }
+    window.onclick = function(event) {
+        const modal = document.getElementById('modalContacto');
+        if (event.target === modal) {
+            cerrarModalContacto();
+        }
+    }
+    </script>
+    <script>
+    // Cambio de idioma entre español e inglés
+    const textos = {
+        es: {
+            modo: 'Noche',
+            idioma: 'Español',
+            sobreMi: 'Sobre mí',
+            servicios: 'Servicios',
+            habilidades: 'Habilidades',
+            educacion: 'Educación',
+            proyectos: 'Proyectos',
+            contacto: 'Contacto',
+            contactoTexto: 'Puedes contactarme en:',
+            nombre: 'Nombre:',
+            email: 'Email:',
+            mensaje: 'Mensaje:',
+            enviar: 'Enviar',
+        },
+        en: {
+            modo: 'Night',
+            idioma: 'English',
+            sobreMi: 'About Me',
+            servicios: 'Services',
+            habilidades: 'Skills',
+            educacion: 'Education',
+            proyectos: 'Projects',
+            contacto: 'Contact',
+            contactoTexto: 'You can contact me at:',
+            nombre: 'Name:',
+            email: 'Email:',
+            mensaje: 'Message:',
+            enviar: 'Send',
+        }
+    };
+    document.getElementById('idiomaSwitch').addEventListener('change', function(){
+        const lang = this.checked ? 'en' : 'es';
+        document.getElementById('idiomaLabel').textContent = textos[lang].idioma;
+        document.getElementById('modoLabel').textContent = textos[lang].modo;
+        // Nav
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks[0].textContent = textos[lang].sobreMi;
+        navLinks[1].textContent = textos[lang].servicios;
+        navLinks[2].textContent = textos[lang].habilidades;
+        navLinks[3].textContent = textos[lang].educacion;
+        navLinks[4].textContent = textos[lang].proyectos;
+        navLinks[5].textContent = textos[lang].contacto;
+        // Secciones
+        document.querySelector('#sobre-mi h2').textContent = textos[lang].sobreMi;
+        document.querySelector('#servicios h2').textContent = textos[lang].servicios;
+        document.querySelector('#habilidades h2').textContent = textos[lang].habilidades;
+        document.querySelector('#educacion h2').textContent = textos[lang].educacion;
+        document.querySelector('#proyectos h2').textContent = textos[lang].proyectos;
+        document.querySelector('#contacto h2').textContent = textos[lang].contacto;
+        document.querySelector('#contacto p').textContent = textos[lang].contactoTexto;
+        document.querySelector('label[for="nombre"]').textContent = textos[lang].nombre;
+        document.querySelector('label[for="email"]').textContent = textos[lang].email;
+        document.querySelector('label[for="mensaje"]').textContent = textos[lang].mensaje;
+        document.querySelector('#formContacto button').textContent = textos[lang].enviar;
+    });
+    </script>
+    <script>
+    // Animaciones al hacer scroll (se reinician si el elemento sale y vuelve a entrar)
+    function animarScroll() {
+        const animados = document.querySelectorAll('.fade-in, .card-modern, .proyecto, .lista-efecto li');
+        animados.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if(rect.top < window.innerHeight - 60 && rect.bottom > 0) {
+                el.classList.add('animado');
+            } else {
+                el.classList.remove('animado');
+            }
+        });
+    }
+    window.addEventListener('scroll', animarScroll);
+    window.addEventListener('load', animarScroll);
+
+    // Validación de formulario de contacto
+    document.getElementById('formContacto').addEventListener('submit', function(e){
+        e.preventDefault();
+        const nombre = document.getElementById('nombre').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const mensaje = document.getElementById('mensaje').value.trim();
+        const msg = document.getElementById('formMsg');
+        if(nombre.length < 2){
+            msg.textContent = 'Por favor, ingresa tu nombre.';
+            msg.style.color = 'red';
+            return;
+        }
+        if(!email.match(/^\S+@\S+\.\S+$/)){
+            msg.textContent = 'Por favor, ingresa un email válido.';
+            msg.style.color = 'red';
+            return;
+        }
+        if(mensaje.length < 5){
+            msg.textContent = 'Por favor, escribe un mensaje más largo.';
+            msg.style.color = 'red';
+            return;
+        }
+        msg.textContent = '¡Mensaje enviado correctamente!';
+        msg.style.color = 'green';
+        this.reset();
+    });
+    // Modo día/noche
+    $(document).ready(function(){
+        $('#modoSwitch').on('change', function(){
+            if(this.checked){
+                $('body').addClass('modo-dia');
+                $('#modoLabel').text('Día');
+            }else{
+                $('body').removeClass('modo-dia');
+                $('#modoLabel').text('Noche');
+            }
+        });
+    });
+    // Animaciones de entrada y efectos modernos
+    $(document).ready(function(){
+        $('.fade-in').css({opacity:0, position:'relative', top:'30px'});
+        $('.slide-down').css({opacity:0, position:'relative', top:'-30px'});
+        $('.slide-up').css({opacity:0, position:'relative', bottom:'-30px'});
+        setTimeout(function(){
+            $('.fade-in').each(function(i){
+                $(this).delay(i*200).animate({opacity:1, top:0}, 700);
+            });
+            $('.slide-down').animate({opacity:1, top:0}, 700);
+            $('.slide-up').animate({opacity:1, bottom:0}, 700);
+        }, 300);
+        // Animación zoom en proyectos
+        $('.proyecto').hover(function(){
+            $(this).addClass('activo');
+        },function(){
+            $(this).removeClass('activo');
+        });
+        // Animación de títulos
+        $('.titulo-efecto').each(function(i){
+            $(this).css({opacity:0, transform:'scale(0.9)'});
+            $(this).delay(500+i*200).animate({opacity:1},400).queue(function(next){
+                $(this).css({transform:'scale(1)'}); next();
+            });
+        });
+        // Animación de iconos
+        $('.icono-seccion').each(function(i){
+            $(this).css({opacity:0, left:'-20px', position:'relative'});
+            $(this).delay(700+i*200).animate({opacity:1, left:0},500);
+        });
+        // Animación de listas
+        $('.lista-efecto li').each(function(i){
+            $(this).css({opacity:0, left:'20px', position:'relative'});
+            $(this).delay(900+i*120).animate({opacity:1, left:0},400);
+        });
+    });
+
+    // Modal de proyectos
+    const proyectosData = [
+        {
+            titulo: 'Proyecto 1',
+            img: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
+            desc: 'Descripción detallada del proyecto 1, tecnologías utilizadas y logros.',
+            github: 'https://github.com/tuusuario/proyecto1',
+            demo: 'https://proyecto1.com'
+        },
+        {
+            titulo: 'Proyecto 2',
+            img: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80',
+            desc: 'Descripción detallada del proyecto 2, tecnologías utilizadas y logros.',
+            github: 'https://github.com/tuusuario/proyecto2',
+            demo: 'https://proyecto2.com'
+        },
+        {
+            titulo: 'Proyecto 3',
+            img: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+            desc: 'Descripción detallada del proyecto 3, tecnologías utilizadas y logros.',
+            github: 'https://github.com/tuusuario/proyecto3',
+            demo: 'https://proyecto3.com'
+        },
+        {
+            titulo: 'Proyecto 4',
+            img: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
+            desc: 'Descripción detallada del proyecto 4, tecnologías utilizadas y logros.',
+            github: 'https://github.com/tuusuario/proyecto4',
+            demo: 'https://proyecto4.com'
+        },
+        {
+            titulo: 'Proyecto 5',
+            img: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
+            desc: 'Descripción detallada del proyecto 5, tecnologías utilizadas y logros.',
+            github: 'https://github.com/tuusuario/proyecto5',
+            demo: 'https://proyecto5.com'
+        }
+    ];
+
+    function abrirModalProyecto(idx) {
+        const p = proyectosData[idx-1];
+        const html = `
+            <h2 style='text-align:center;'>${p.titulo}</h2>
+            <img src='${p.img}' alt='${p.titulo}' style='width:100%;border-radius:12px;margin-bottom:16px;'>
+            <p style='text-align:center;'>${p.desc}</p>
+            <div style='text-align:center;margin-top:18px;'>
+                <a class='btn-cv' href='${p.github}' target='_blank'>Descargar código en GitHub</a>
+                <a class='btn-cv' href='${p.demo}' target='_blank'>Ver proyecto en línea</a>
+            </div>
+        `;
+        document.getElementById('modalProyectoContenido').innerHTML = html;
+        document.getElementById('modalProyecto').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+    function cerrarModalProyecto() {
+        document.getElementById('modalProyecto').style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
+    // Cerrar modal al hacer clic fuera del contenido
+    window.onclick = function(event) {
+        const modal = document.getElementById('modalProyecto');
+        if (event.target === modal) {
+            cerrarModalProyecto();
+        }
+    }
+    </script>
+</body>
+</html>

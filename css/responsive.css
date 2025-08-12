@@ -1,0 +1,57 @@
+/* Estilos responsivos para todo el sitio */
+@media (max-width: 900px) {
+    .container {
+        max-width: 98vw;
+        padding: 18px 6vw;
+    }
+    .card-modern {
+        padding: 18px 8px 18px 8px;
+    }
+    .proyectos {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+    }
+    .proyecto-img {
+        height: 180px;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 8px 2vw;
+    }
+    .perfil {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .perfil-img {
+        width: 90px;
+        height: 90px;
+    }
+    .card-modern {
+        padding: 10px 4px 10px 4px;
+    }
+    .proyectos {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .proyecto-img {
+        height: 120px;
+    }
+    .modo-toggle {
+        top: 8px;
+        right: 8px;
+        padding: 4px 8px;
+    }
+    .modal-contenido {
+        max-width: 98vw;
+        margin: 18px auto;
+        padding: 12px 4px;
+    }
+    h2, .titulo-efecto {
+        font-size: 1.3em;
+    }
+    .lista-efecto li {
+        padding: 8px 12px;
+        font-size: 0.95em;
+    }
+}
