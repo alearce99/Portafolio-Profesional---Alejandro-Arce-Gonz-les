@@ -1,37 +1,51 @@
 /* Estilos de la barra de navegación */
 nav {
-    margin: 20px 0;
+    margin: 32px 0 36px 0;
     text-align: center;
-    background: #23272f;
-    box-shadow: 0 2px 8px rgba(44,62,80,0.12);
-    border-radius: 8px;
-    padding: 10px 0;
-    color: #e0e0e0;
+    background: linear-gradient(90deg, #183a5a 0%, #2176ae 100%);
+    box-shadow: 0 4px 18px rgba(0,180,216,0.13);
+    border-radius: 18px;
+    padding: 18px 0 14px 0;
+    color: #fff;
+    position: relative;
+    z-index: 10;
 }
 nav a {
     color: #e0e0e0;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.2s, border-bottom 0.2s;
+    margin: 0 22px;
+    font-weight: 700;
+    font-size: 1.18em;
+    letter-spacing: 1px;
+    transition: color 0.2s, border-bottom 0.2s, background 0.2s, box-shadow 0.2s;
     border-bottom: 2px solid transparent;
-    padding-bottom: 2px;
+    padding: 8px 18px 6px 18px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,180,216,0.08);
 }
 nav a:hover {
-    color: #00b4d8;
-    border-bottom: 2px solid #00b4d8;
+    color: #183a5a;
+    background: #e0e0e0;
+    border-bottom: 2px solid #2176ae;
+    box-shadow: 0 4px 16px rgba(33,118,174,0.18);
+    transform: scale(1.08);
+    z-index: 2;
 }
 /* Modo día para nav */
 .modo-dia nav {
-    background: #e0e0e0 !important;
+    background: linear-gradient(90deg, #e0e0e0 0%, #2176ae 100%) !important;
     color: #23272f !important;
-    box-shadow: 0 2px 8px rgba(44,62,80,0.10) !important;
+    box-shadow: 0 4px 18px rgba(44,62,80,0.10) !important;
 }
 .modo-dia nav a {
     color: #23272f !important;
+    background: #fff !important;
 }
 .modo-dia nav a:hover {
-    color: #0077b6 !important;
-    border-bottom: 2px solid #0077b6 !important;
+    color: #e0e0e0 !important;
+    background: #2176ae !important;
+    border-bottom: 2px solid #183a5a !important;
+    box-shadow: 0 4px 16px rgba(33,118,174,0.18) !important;
+    transform: scale(1.08);
 }
